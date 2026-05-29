@@ -1,20 +1,118 @@
 # README Design System Reference
 
-Use this reference only when detailed design consistency is needed.
+Use this reference when a README needs stronger visual consistency or reusable landing-page patterns.
 
-## Default Badge Color Mapping
+## Palette
 
-- Primary technical identity: `#58A6FF`
-- AI or agent systems: `#8B5CF6`
-- Stable/working status: `#22C55E`
-- Experimental/in progress: `#F59E0B`
-- Neutral tooling: `#C9D1D9`
+| Purpose | Color |
+|---|---|
+| Background | `#0D1117` |
+| Primary | `#58A6FF` |
+| Secondary | `#8B5CF6` |
+| Success | `#22C55E` |
+| Warning | `#F59E0B` |
+| Text | `#C9D1D9` |
 
-## Suggested Banner Prompt Pattern
+## Badge Mapping
 
-Dark modern engineering banner for "{Project Name}" by Nicolas AI Engineering Lab. Visual theme: {project category}. Include subtle architecture lines, technical grid, clean spacing, dark GitHub background `#0D1117`, blue accent `#58A6FF`, purple accent `#8B5CF6`, minimal SaaS-style composition, professional developer portfolio aesthetic. No clutter, no excessive icons, no cartoon style.
+Use `style=for-the-badge`.
 
-## Mermaid Preference
+| Badge Type | Color | Example |
+|---|---|---|
+| Status active/done | `22C55E` | `https://img.shields.io/badge/Status-Active-22C55E?style=for-the-badge` |
+| Status planned/in progress | `F59E0B` | `https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge` |
+| AI/Agent type | `8B5CF6` | `https://img.shields.io/badge/Type-Agent%20System-8B5CF6?style=for-the-badge` |
+| Architecture/focus | `58A6FF` | `https://img.shields.io/badge/Focus-Architecture-58A6FF?style=for-the-badge` |
+| Brand/lab | `0D1117` | `https://img.shields.io/badge/Lab-Nicolas%20AI%20Engineering%20Lab-0D1117?style=for-the-badge` |
 
-Use Mermaid for architecture diagrams when the data flow can be expressed simply. Keep diagrams readable in GitHub markdown.
+## Hero Pattern
 
+```md
+<p align="center">
+  <img src="./assets/banner.png" alt="Project Banner" />
+</p>
+
+<div align="center">
+
+# Project Name
+
+Short technical positioning statement.
+
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-22C55E?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Type-AI%20Engineering-8B5CF6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Architecture-58A6FF?style=for-the-badge" />
+</p>
+
+<div align="center">
+
+**Nicolas AI Engineering Lab**<br>
+AI Engineering - Software Architecture - Cloud - Agent Systems
+
+</div>
+```
+
+If `assets/banner.png` does not exist, omit the image and recommend creating it later.
+
+## Card Pattern
+
+```md
+<table>
+<tr>
+<td width="50%">
+
+### Capability One
+
+What it does and why it matters.
+
+</td>
+<td width="50%">
+
+### Capability Two
+
+What it does and why it matters.
+
+</td>
+</tr>
+</table>
+```
+
+Use cards for content readers scan quickly: features, modules, architecture highlights, lessons, or outcomes.
+
+## Mermaid Rules
+
+- Use fenced `mermaid` code blocks.
+- Prefer `flowchart TD` for system architecture.
+- Keep labels short.
+- Avoid complex syntax that may fail on GitHub.
+- Do not represent components that are not in the repo.
+
+Example:
+
+```mermaid
+flowchart TD
+    A[User] --> B[Interface]
+    B --> C[Application Layer]
+    C --> D[(Data Store)]
+    C --> E[External Service]
+```
+
+## Banner Prompt Pattern
+
+Dark modern engineering banner for "{Project Name}" by Nicolas AI Engineering Lab. Visual theme: {project category}. Include subtle architecture lines, technical grid, clean spacing, GitHub dark background `#0D1117`, blue accent `#58A6FF`, purple accent `#8B5CF6`, minimal SaaS documentation style, professional AI engineering portfolio aesthetic. No clutter, no cartoon style, no excessive icons.
+
+## Visual Density Guard
+
+Good visual README design is not "more graphics". Use visual blocks to clarify structure. If every section is a card, nothing stands out.
+
+Default density:
+
+- 1 hero
+- 1 badge bar
+- 1 identity block
+- 1-2 card tables
+- 1 Mermaid diagram
+- 1 visual tech stack
+- 1 roadmap table

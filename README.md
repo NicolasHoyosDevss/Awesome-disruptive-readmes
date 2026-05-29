@@ -1,54 +1,95 @@
+﻿<div align="center">
+
 # Awesome Disruptive READMEs
 
-Reusable Codex skills for building portfolio-grade GitHub repositories with consistent documentation, branding, and engineering storytelling.
+Reusable Codex skills for building visual, portfolio-grade GitHub documentation systems.
 
-![Status](https://img.shields.io/badge/status-in%20progress-F59E0B?style=for-the-badge)
-![Type](https://img.shields.io/badge/type-codex%20skills-58A6FF?style=for-the-badge)
-![Focus](https://img.shields.io/badge/focus-readme%20design%20systems-8B5CF6?style=for-the-badge)
-![Brand](https://img.shields.io/badge/lab-Nicolas%20AI%20Engineering%20Lab-0D1117?style=for-the-badge)
+</div>
 
-## Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Type-Agent%20Skills-8B5CF6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-README%20Design%20Systems-58A6FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Lab-Nicolas%20AI%20Engineering%20Lab-0D1117?style=for-the-badge" />
+</p>
 
-This repository is a personal skill catalog for Codex. Its purpose is to store reusable AI-agent skills that can be installed once and then used across multiple repositories.
+<div align="center">
 
-The first skill included here is `readme-design-system`: a documentation design framework for turning repositories into professional engineering portfolio assets.
+**Nicolas AI Engineering Lab**<br>
+AI Engineering - Software Architecture - Cloud - Agent Systems
+
+</div>
+
+## Overview
+
+`Awesome-disruptive-readmes` is a personal Codex skill catalog focused on reusable documentation systems.
+
+The repository stores skills that can be installed globally and reused across projects. Its first skill, `readme-design-system`, turns regular repository documentation into visual technical landing pages with consistent branding, architecture storytelling, and professional portfolio structure.
+
+> Visual asset note: this repo does not include `assets/banner.png` yet. The recommended next step is to create a dark engineering banner using the Nicolas AI Engineering Lab palette.
 
 ## Problem
 
-Most GitHub repositories end up with READMEs that are either too generic, too empty, or disconnected from the actual engineering value of the project.
+Most repositories fail to communicate their real engineering value.
 
-That creates a weak portfolio signal:
+<table>
+<tr>
+<td width="50%">
 
-- The architecture is not visible.
-- The technical decisions are not explained.
-- The project does not communicate maturity.
-- Each repository looks different, even when it belongs to the same personal brand.
+### Flat Documentation
+
+READMEs often become setup notes, generic descriptions, or incomplete placeholders.
+
+</td>
+<td width="50%">
+
+### Hidden Engineering
+
+Architecture, decisions, tradeoffs, and learning are usually buried or missing completely.
+
+</td>
+</tr>
+</table>
 
 ## Solution
 
-This repo centralizes reusable Codex skills that enforce a consistent documentation style.
+This repository keeps documentation design as reusable agent knowledge.
 
-Instead of rewriting README rules in every project, the skill provides Codex with a repeatable system:
+Instead of manually rewriting README standards in every project, install the skill once and let Codex apply the same visual system across repositories.
 
-- Analyze the repository before writing.
-- Classify the project type.
-- Apply a consistent README structure.
-- Use the Nicolas AI Engineering Lab visual identity.
-- Keep architecture and engineering decisions visible.
-- Avoid fake metrics, fake architecture, and generic marketing text.
+<table>
+<tr>
+<td width="50%">
 
-## Included Skills
+### Reusable Skill System
+
+Each skill is a standalone folder with a `SKILL.md`, optional references, templates, examples, and assets.
+
+</td>
+<td width="50%">
+
+### Portfolio-Grade Output
+
+The README system generates hero sections, badges, cards, Mermaid diagrams, visual roadmaps, and professional author footers.
+
+</td>
+</tr>
+</table>
+
+## Included Skill
 
 ### `readme-design-system`
 
-Creates or improves portfolio-grade GitHub READMEs with:
+A visual README design framework for creating technical landing pages.
 
-- Consistent branding
-- Badge strategy
-- Architecture sections
-- Project storytelling
-- Category-specific documentation for AI, agent, cloud, and full stack projects
-- Banner and asset recommendations
+| Capability | Description |
+|---|---|
+| Hero section | Centered project title, positioning statement, and optional banner |
+| Badge bar | Consistent Shields.io badges using the brand palette |
+| Visual cards | HTML/Markdown cards for features, modules, and learning outcomes |
+| Architecture | Mermaid diagrams plus component and data-flow explanations |
+| Storytelling | Problem, solution, decisions, lessons, and future improvements |
+| Category adaptation | AI, Agent, Cloud, Full Stack, and Documentation/Skill projects |
 
 Location:
 
@@ -56,59 +97,79 @@ Location:
 skills/readme-design-system/
 ```
 
+## Before vs After
+
+| Before | After |
+|---|---|
+| Generic README templates | Technical landing-page documentation |
+| Repeated manual prompts | Versioned reusable Codex skill |
+| Hidden architecture | Mermaid diagrams and component responsibilities |
+| Inconsistent repo identity | Nicolas AI Engineering Lab visual system |
+| Flat project explanation | Engineering storytelling and roadmap |
+
 ## Architecture
 
 ```mermaid
 flowchart TD
-    A[This Repository] --> B[skills/]
+    A[Awesome Disruptive READMEs] --> B[skills/]
     B --> C[readme-design-system]
     C --> D[SKILL.md]
-    C --> E[agents/openai.yaml]
-    C --> F[references/]
-    C --> G[assets/]
+    C --> E[references/design-reference.md]
+    C --> F[templates/readme-template.md]
+    C --> G[examples/example-readme.md]
+    C --> H[agents/openai.yaml]
 
-    H[Codex Global Skills Directory] --> I[~/.codex/skills]
-    C -. copied or symlinked .-> I
-    I --> J[Available in Any Repository]
+    C -. symlink or copy .-> I[~/.codex/skills/readme-design-system]
+    I --> J[Any Repository]
+    J --> K[Visual Portfolio README]
 ```
 
-The repository acts as the source of truth. Codex uses the installed skill from the global skills directory.
+### Component Responsibilities
 
-## Recommended Local Structure
+| Component | Responsibility |
+|---|---|
+| `SKILL.md` | Main activation metadata and execution rules for the agent |
+| `references/` | Detailed visual patterns, badge mapping, banner prompt, Mermaid rules |
+| `templates/` | Reusable README skeleton for future generation |
+| `examples/` | Compact example of the expected visual style |
+| `agents/openai.yaml` | UI-facing metadata for skill discovery |
 
-```txt
-Awesome-disruptive-readmes/
-|-- README.md
-`-- skills/
-    `-- readme-design-system/
-        |-- SKILL.md
-        |-- agents/
-        |   `-- openai.yaml
-        |-- references/
-        |   `-- design-reference.md
-        `-- assets/
+### Technical Decisions
+
+- Keep the repo as the source of truth.
+- Install skills globally by symlink when possible.
+- Use ASCII-safe examples where Windows tooling may have encoding issues.
+- Prefer visual clarity over decoration: fewer stronger visual blocks, not noisy Markdown.
+
+## How It Works
+
+Codex discovers skills through their metadata first:
+
+```md
+---
+name: readme-design-system
+description: Create or improve highly visual, portfolio-grade GitHub README landing pages...
+---
 ```
+
+When a user asks for README design, portfolio documentation, or visual repository presentation, Codex loads the skill body and follows its workflow.
 
 ## Installation
 
-### 1. Clone this repository
+### 1. Clone the repository
 
 ```powershell
-git clone <REPOSITORY_URL>
+git clone https://github.com/NicolasHoyosDevss/Awesome-disruptive-readmes.git
 cd Awesome-disruptive-readmes
 ```
 
-Replace `<REPOSITORY_URL>` with the actual GitHub URL once the repository is published.
-
-### 2. Create the Codex skills directory
+### 2. Create the global Codex skills directory
 
 ```powershell
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills"
 ```
 
-### 3. Install the skill globally
-
-Recommended approach: use a symbolic link.
+### 3. Install with a symbolic link
 
 ```powershell
 New-Item -ItemType SymbolicLink `
@@ -116,7 +177,7 @@ New-Item -ItemType SymbolicLink `
   -Target "$PWD\skills\readme-design-system"
 ```
 
-This keeps the repository as the source of truth. When the skill changes in this repo, Codex uses the updated version automatically.
+This is the recommended approach because this repo remains the source of truth. Any change made here is immediately available to Codex.
 
 ### Alternative: copy the skill
 
@@ -128,93 +189,117 @@ Copy-Item `
   "$env:USERPROFILE\.codex\skills\readme-design-system"
 ```
 
-Copying is simpler, but updates are not automatic. If the skill changes, copy it again.
+Copying is simpler, but updates are manual.
 
 ## Usage
 
-After installation, open Codex in any repository and ask for README work naturally:
+Open Codex in any repository and ask naturally:
 
 ```txt
-Apply my README design system to this repository.
+Use the readme-design-system skill and create a visual landing-page README for this repository.
 ```
 
 Or:
 
 ```txt
-Create a portfolio-grade README using the Nicolas AI Engineering Lab style.
+Apply the Nicolas AI Engineering Lab README design system to this repo.
 ```
 
-Codex should detect the `readme-design-system` skill, load its instructions, inspect the repository, and generate or improve the README based on the actual project context.
+Codex should inspect the repository, classify the project, and generate a README using the visual system.
 
-## How a Skill Works
+## Project Structure
 
-Each skill is a folder with a required `SKILL.md`.
-
-Codex first sees only the skill metadata:
-
-```md
----
-name: readme-design-system
-description: Create or improve portfolio-grade GitHub README systems...
----
+```txt
+Awesome-disruptive-readmes/
+|-- README.md
+`-- skills/
+    `-- readme-design-system/
+        |-- SKILL.md
+        |-- agents/
+        |   `-- openai.yaml
+        |-- assets/
+        |-- examples/
+        |   `-- example-readme.md
+        |-- references/
+        |   `-- design-reference.md
+        `-- templates/
+            `-- readme-template.md
 ```
-
-When your request matches the description, Codex loads the full skill body and follows the instructions.
-
-That means the description is not decoration. It is the trigger surface.
 
 ## Skill Folder Standard
 
-Use this structure for future skills:
+Future skills should follow this structure:
 
 ```txt
 skills/
-└── skill-name/
-    ├── SKILL.md
-    ├── agents/
-    │   └── openai.yaml
-    ├── references/
-    ├── scripts/
-    └── assets/
+`-- skill-name/
+    |-- SKILL.md
+    |-- agents/
+    |   `-- openai.yaml
+    |-- references/
+    |-- templates/
+    |-- examples/
+    |-- scripts/
+    `-- assets/
 ```
 
 Required:
 
 - `SKILL.md`
 
-Recommended:
+Recommended when useful:
 
-- `agents/openai.yaml` for UI-facing metadata
-- `references/` for detailed guidance loaded only when needed
+- `agents/openai.yaml` for UI metadata
+- `references/` for detailed guidance
+- `templates/` for reusable output skeletons
+- `examples/` for expected style
 - `scripts/` for repeatable automation
-- `assets/` for templates, images, examples, or files used by the skill
+- `assets/` for reusable visual or output files
 
 ## Roadmap
 
-- Add an installation script for Windows.
-- Add a validation script for all skills.
-- Add more documentation design skills.
-- Add examples of before/after README transformations.
-- Add banner assets for the Nicolas AI Engineering Lab visual identity.
+| Stage | Status | Focus |
+|---|---|---|
+| Repository foundation | Done | GitHub repo, root README, first skill |
+| Visual README system | In progress | Hero, cards, badges, Mermaid, templates |
+| Global installation flow | In progress | Symlink/copy workflow documented |
+| Automation scripts | Planned | Install and validate all skills |
+| Visual assets | Planned | `assets/banner.png` and brand graphics |
+| Skill catalog expansion | Planned | More reusable Codex skills |
 
 ## Lessons Learned
 
-- A skill should be a reusable operating system for the agent, not a long prompt dump.
-- The `description` field is critical because it controls when the skill activates.
-- Keeping the repo as the source of truth and symlinking into `~/.codex/skills` avoids manual update drift.
-- On Windows, ASCII-safe skill metadata/content can avoid encoding issues with some helper scripts.
+<table>
+<tr>
+<td width="50%">
+
+### Skills Need Strong Triggers
+
+The `description` field is not cosmetic. It controls when Codex decides to load the skill.
+
+</td>
+<td width="50%">
+
+### Visual Systems Need Rules
+
+A visual README is not random decoration. It needs repeatable structure, density control, and honest technical content.
+
+</td>
+</tr>
+</table>
 
 ## Future Improvements
 
 - Add `scripts/install-skills.ps1` to install every skill automatically.
-- Add `scripts/validate-skills.ps1` to validate every `SKILL.md`.
-- Add a `docs/` section explaining how to design new skills.
-- Add more reusable skill categories beyond README generation.
+- Add `scripts/validate-skills.ps1` to validate every skill folder.
+- Add a real `assets/banner.png` for the repository.
+- Add before/after README examples from real projects.
+- Add more Codex skills for architecture docs, PR descriptions, and technical portfolios.
 
 ## Author
 
-Built by Nicolas Hoyos
+Built by **Nicolas Hoyos**<br>
 
-Software Engineering - AI Engineering - Software Architecture - Cloud & Agent Systems
+Software Engineering - AI Engineering - Software Architecture<br>
 
-Building intelligent systems, scalable architectures, and practical AI products.
+> Building intelligent systems, scalable architectures, and practical AI products.
