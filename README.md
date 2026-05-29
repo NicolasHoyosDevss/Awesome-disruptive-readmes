@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/Readme-design-system-banner.png" alt="Awesome Disruptive READMEs Banner" />
+</p>
+
 <div align="center">
 
 # Awesome Disruptive READMEs
@@ -28,8 +32,6 @@ AI Engineering - Software Architecture - Cloud - Agent Systems<br>
 `Awesome-disruptive-readmes` is a Codex skill catalog and a live example of the README style it promotes.
 
 The repository stores reusable skills that can be installed globally and applied across projects. Its first skill, `readme-design-system`, teaches Codex how to create README files that look like modern technical landing pages instead of flat setup notes.
-
-> Visual asset note: this repo does not include `assets/banner.png` yet. A future banner should use the dark engineering palette: `#0D1117`, `#58A6FF`, `#8B5CF6`, `#C9D1D9`.
 
 ## What This Repository Gives You
 
@@ -192,6 +194,18 @@ flowchart TD
 - Require valid fenced Mermaid blocks for diagrams.
 - Use cards to reduce scanning effort without turning the README into decoration.
 - Keep future work clearly marked instead of pretending features already exist.
+
+
+## Visual Assets Needed
+
+This repository now includes a hero banner. These remaining visual assets are optional improvements.
+
+| Asset | Suggested Path | Purpose | Prompt Direction |
+|---|---|---|---|
+| Skill Preview | `assets/screenshots/readme-example.png` | Show a generated README example | Screenshot of a visual GitHub README with hero, badges, cards, Mermaid, and roadmap |
+| Architecture Export | `architecture/skill-system-overview.png` | Optional visual alternative to Mermaid | Clean system diagram showing repo, skill folder, global Codex install, and target repositories |
+
+The README does not reference these files as existing assets yet. They are listed as recommended next visuals so the repository can grow without broken images.
 
 ## Visual README Patterns
 

@@ -33,14 +33,54 @@ Every generated README must feel like a visual technical landing page. Unless th
 - Before vs After section for documentation, tooling, refactor, portfolio, or transformation projects
 - Visual tech stack when technologies are present
 - Real project structure tree
+- Visual asset intake or Visual Assets Needed section when images are missing
 - Professional visual footer
 
 Mermaid rule: ALWAYS wrap diagrams in a fenced code block that starts with exactly ```` ```mermaid ```` and ends with exactly ```` ``` ````. Never output Mermaid syntax as plain text, indented text, quoted text, or inside a `txt` fence.
 
+
+## Visual Asset Intake
+
+Before generating or updating a README, inspect the repository for visual assets:
+
+- `assets/banner.png`
+- `assets/screenshots/`
+- `docs/images/`
+- `architecture/`
+- `public/`
+- `static/`
+
+Rules:
+
+- If `assets/banner.png` exists, include it in the hero with centered HTML.
+- If screenshots exist, add a Demo, Screenshots, or UI Preview section using only real files.
+- If architecture images exist, use them only when they clarify more than Mermaid.
+- If no visuals exist, do not reference missing images as if they exist.
+- Add a concise "Visual Assets Needed" section with recommended assets, paths, purpose, and generation prompts.
+- Do not stop README generation just because assets are missing; create the README and leave clear asset recommendations.
+
+Recommended visual asset table:
+
+```md
+## Visual Assets Needed
+
+| Asset | Suggested Path | Purpose |
+|---|---|---|
+| Banner | `assets/banner.png` | Hero visual identity |
+| Demo Screenshot | `assets/screenshots/demo.png` | Product or workflow preview |
+| Architecture Export | `architecture/system-overview.png` | Optional high-level architecture visual |
+```
+
+Banner prompt pattern:
+
+```txt
+Dark modern engineering banner for "{Project Name}" by Nicolas AI Engineering Lab. Use GitHub dark background #0D1117, blue accent #58A6FF, purple accent #8B5CF6, subtle architecture lines, technical grid, clean spacing, modern SaaS documentation style, AI engineering aesthetic, no clutter, no cartoon style.
+```
+
 ## Required Workflow
 
 1. Inspect the repository before writing.
-   - Identify project type, stack, architecture, folders, existing README, assets, and maturity.
+   - Identify project type, stack, architecture, folders, existing README, visual assets, and maturity.
    - Do not invent metrics, architecture, screenshots, production usage, or features.
 2. Classify the project.
    - AI, Agent, Cloud, Full Stack, Documentation/Skill, Library, Tooling, Research, or Hybrid.
@@ -54,8 +94,9 @@ Mermaid rule: ALWAYS wrap diagrams in a fenced code block that starts with exact
 5. Preserve technical truth.
    - Mark future work as planned.
    - Use "Not implemented yet" or "Future improvement" instead of pretending.
-6. Recommend missing assets.
-   - If `assets/banner.png` does not exist, include a concise banner recommendation or prompt.
+6. Run visual asset intake.
+   - Use existing visual files when present.
+   - If `assets/banner.png` does not exist, include a concise Visual Assets Needed section with a banner recommendation and prompt.
 
 ## Brand Identity
 

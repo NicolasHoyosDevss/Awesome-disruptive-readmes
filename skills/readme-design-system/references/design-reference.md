@@ -135,3 +135,28 @@ When the repository itself is a documentation system, skill catalog, template, o
 - Before vs After
 
 Use cards or a compact table so the section is visual, not a wall of prose.
+
+
+## Visual Asset Intake Reference
+
+Search these paths before deciding whether to include images:
+
+| Path | Use |
+|---|---|
+| `assets/banner.png` | Hero banner |
+| `assets/screenshots/` | Demo, UI Preview, workflow screenshots |
+| `docs/images/` | Documentation images |
+| `architecture/` | Architecture exports or Excalidraw outputs |
+| `public/` / `static/` | App visuals that may be reusable in README |
+
+If assets are missing, add a short recommendations table instead of referencing files that do not exist.
+
+Recommended dimensions:
+
+| Asset | Suggested Size |
+|---|---|
+| Banner | 1600x500 or 1280x400 |
+| Screenshot | Native app resolution |
+| Architecture export | 1600px wide minimum |
+
+Do not block README generation to wait for images. Generate the README, then list the exact visual assets that would improve it.
