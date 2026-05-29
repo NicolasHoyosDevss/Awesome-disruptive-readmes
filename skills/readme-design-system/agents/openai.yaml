@@ -1,0 +1,4 @@
+interface:
+  display_name: "README Design System"
+  short_description: "Portfolio-grade README design"
+  default_prompt: "Create or improve a repository README using the Nicolas AI Engineering Lab design system."
