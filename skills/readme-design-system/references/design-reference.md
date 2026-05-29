@@ -83,11 +83,17 @@ Use cards for content readers scan quickly: features, modules, architecture high
 
 ## Mermaid Rules
 
+Mermaid must render on GitHub. Never output diagram syntax as plain text.
+
 - Use fenced `mermaid` code blocks.
 - Prefer `flowchart TD` for system architecture.
 - Keep labels short.
 - Avoid complex syntax that may fail on GitHub.
 - Do not represent components that are not in the repo.
+- Opening fence must be exactly ` ```mermaid `.
+- Closing fence must be exactly ` ``` `.
+- Do not indent fences.
+- Do not nest Mermaid inside another code block.
 
 Example:
 
@@ -116,3 +122,16 @@ Default density:
 - 1 Mermaid diagram
 - 1 visual tech stack
 - 1 roadmap table
+
+
+## Visual README Patterns Section
+
+When the repository itself is a documentation system, skill catalog, template, or design system, add a short "Visual README Patterns" section that demonstrates:
+
+- Hero
+- Badges
+- Cards
+- Mermaid
+- Before vs After
+
+Use cards or a compact table so the section is visual, not a wall of prose.

@@ -21,6 +21,22 @@ Treat every README as:
 
 Do not generate generic templates. Inspect the repository first and adapt the visual structure to the real project.
 
+## Non-Negotiable Output Rules
+
+Every generated README must feel like a visual technical landing page. Unless the repository context makes a section dishonest, include:
+
+- Centered hero section
+- Centered Shields.io badge bar
+- Strong Nicolas AI Engineering Lab identity block
+- At least one HTML card table for scannable content
+- Valid fenced Mermaid architecture block when architecture or folder flow exists
+- Before vs After section for documentation, tooling, refactor, portfolio, or transformation projects
+- Visual tech stack when technologies are present
+- Real project structure tree
+- Professional visual footer
+
+Mermaid rule: ALWAYS wrap diagrams in a fenced code block that starts with exactly ```` ```mermaid ```` and ends with exactly ```` ``` ````. Never output Mermaid syntax as plain text, indented text, quoted text, or inside a `txt` fence.
+
 ## Required Workflow
 
 1. Inspect the repository before writing.
@@ -30,9 +46,11 @@ Do not generate generic templates. Inspect the repository first and adapt the vi
    - AI, Agent, Cloud, Full Stack, Documentation/Skill, Library, Tooling, Research, or Hybrid.
 3. Choose a landing-page README structure.
    - Use the visual section system below.
+   - Prefer visually scannable sections over long prose.
    - Skip unsupported sections instead of filling them with empty marketing.
 4. Generate a visually consistent README.
-   - Use centered hero HTML, Shields.io badges, cards, Mermaid diagrams, visual tech stack, roadmap, and professional footer when appropriate.
+   - Use centered hero HTML, Shields.io badges, identity block, cards, valid Mermaid diagrams, visual tech stack, roadmap, and professional footer when appropriate.
+   - Add a "What This Repository Gives You" or equivalent value section using cards for catalogs, tools, libraries, templates, or documentation systems.
 5. Preserve technical truth.
    - Mark future work as planned.
    - Use "Not implemented yet" or "Future improvement" instead of pretending.
@@ -94,7 +112,7 @@ Use this order when applicable:
 
 ### Hero Section
 
-Use centered HTML at the top:
+Use centered HTML at the top. This is mandatory for portfolio-facing READMEs:
 
 ```md
 <div align="center">
@@ -118,7 +136,7 @@ If no banner exists, do not fake one. Add a short recommendation in a "Visual As
 
 ### Badge Bar
 
-Use Shields.io with `style=for-the-badge` and the brand palette:
+Use a centered Shields.io badge bar with `style=for-the-badge` and the brand palette:
 
 ```md
 <p align="center">
@@ -132,7 +150,7 @@ Keep badges useful. Prefer 3-6 badges.
 
 ### Identity Block
 
-Include this near the top unless the repository has a different brand:
+Include a strong centered identity block near the top unless the repository has a different brand. This block should make the README feel connected to a larger engineering lab, not like an isolated code dump:
 
 ```md
 <div align="center">
@@ -147,7 +165,7 @@ Use ASCII hyphens if tool compatibility matters. Use centered layout for brand c
 
 ### Visual Cards
 
-Use HTML tables when they improve scanning. Use them for features, project capabilities, architecture highlights, modules, and learning outcomes.
+Use HTML tables to make the README less flat. Use them for features, "What this gives you", project capabilities, architecture highlights, modules, visual patterns, and learning outcomes.
 
 ```md
 <table>
@@ -170,11 +188,11 @@ Clear technical description.
 </table>
 ```
 
-Do not overuse cards. Two to six cards is usually enough.
+Do not overuse cards. Two to six cards is usually enough. If a README feels flat, add one card table before adding more prose.
 
 ### Mermaid Diagrams
 
-Generate valid Mermaid fenced blocks, never plain-text pseudo diagrams:
+Generate valid Mermaid fenced blocks, never plain-text pseudo diagrams. This is mandatory when adding diagrams:
 
 ````md
 ```mermaid
@@ -188,9 +206,17 @@ flowchart TD
 
 Keep Mermaid simple enough to render on GitHub. Avoid unsupported styling unless necessary.
 
+Mermaid validation checklist:
+
+- The opening fence is exactly ` ```mermaid ` with no indentation.
+- The closing fence is exactly ` ``` ` with no indentation.
+- The diagram is not inside another Markdown fence.
+- The diagram is not quoted with `>`.
+- Labels are short and avoid characters that commonly break GitHub Mermaid rendering.
+
 ### Before vs After
 
-Use when the project is a refactor, documentation system, developer tool, UX improvement, architecture improvement, or portfolio transformation:
+Use when the project is a refactor, documentation system, developer tool, UX improvement, architecture improvement, portfolio transformation, or repository presentation system:
 
 ```md
 ## Before vs After
@@ -241,7 +267,7 @@ Do not invent services. If architecture is unclear, add a "Current Structure" di
 
 ### Project Structure
 
-Include a concise folder tree based on the real repository:
+Include a visual folder tree based on the real repository. Do not invent folders. If a recommended folder does not exist, mention it under Future Improvements instead:
 
 ````md
 ## Project Structure
@@ -275,7 +301,7 @@ Do not claim "Done" unless evidence exists.
 
 ### Footer
 
-Close with:
+Close with a visually clean personal footer:
 
 ```md
 ## Author

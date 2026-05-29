@@ -1,51 +1,95 @@
-﻿<div align="center">
+<div align="center">
 
 # Awesome Disruptive READMEs
 
-Reusable Codex skills for building visual, portfolio-grade GitHub documentation systems.
+Reusable Codex skills for creating visual, portfolio-grade GitHub READMEs with a consistent AI Engineering identity.
 
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Type-Agent%20Skills-8B5CF6?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-README%20Design%20Systems-58A6FF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Lab-Nicolas%20AI%20Engineering%20Lab-0D1117?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge" alt="Status: In Progress" />
+  <img src="https://img.shields.io/badge/Type-Agent%20Skills-8B5CF6?style=for-the-badge" alt="Type: Agent Skills" />
+  <img src="https://img.shields.io/badge/Focus-README%20Design%20Systems-58A6FF?style=for-the-badge" alt="Focus: README Design Systems" />
+  <img src="https://img.shields.io/badge/Lab-Nicolas%20AI%20Engineering%20Lab-0D1117?style=for-the-badge" alt="Nicolas AI Engineering Lab" />
 </p>
 
 <div align="center">
 
-**Nicolas AI Engineering Lab**<br>
-AI Engineering - Software Architecture - Cloud - Agent Systems
+<strong>Nicolas AI Engineering Lab</strong><br>
+AI Engineering - Software Architecture - Cloud - Agent Systems<br>
+<sub>Building reusable documentation systems for technical portfolios and agent-assisted engineering workflows.</sub>
 
 </div>
 
+---
+
 ## Overview
 
-`Awesome-disruptive-readmes` is a personal Codex skill catalog focused on reusable documentation systems.
+`Awesome-disruptive-readmes` is a Codex skill catalog and a live example of the README style it promotes.
 
-The repository stores skills that can be installed globally and reused across projects. Its first skill, `readme-design-system`, turns regular repository documentation into visual technical landing pages with consistent branding, architecture storytelling, and professional portfolio structure.
+The repository stores reusable skills that can be installed globally and applied across projects. Its first skill, `readme-design-system`, teaches Codex how to create README files that look like modern technical landing pages instead of flat setup notes.
 
-> Visual asset note: this repo does not include `assets/banner.png` yet. The recommended next step is to create a dark engineering banner using the Nicolas AI Engineering Lab palette.
+> Visual asset note: this repo does not include `assets/banner.png` yet. A future banner should use the dark engineering palette: `#0D1117`, `#58A6FF`, `#8B5CF6`, `#C9D1D9`.
 
-## Problem
-
-Most repositories fail to communicate their real engineering value.
+## What This Repository Gives You
 
 <table>
 <tr>
 <td width="50%">
 
-### Flat Documentation
+### Visual README System
 
-READMEs often become setup notes, generic descriptions, or incomplete placeholders.
+A reusable Codex skill that generates hero sections, badges, cards, architecture diagrams, project structure, roadmap, and author footer.
 
 </td>
 <td width="50%">
 
-### Hidden Engineering
+### Consistent AI Engineering Identity
 
-Architecture, decisions, tradeoffs, and learning are usually buried or missing completely.
+A repeatable Nicolas AI Engineering Lab style for making multiple repositories feel connected, professional, and portfolio-ready.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Skill-Based Reuse
+
+Instead of copying prompts between repos, install the skill once and let Codex load the documentation rules when README work is requested.
+
+</td>
+<td width="50%">
+
+### Real Example Repository
+
+This README is intentionally written as an example of the same visual system the skill is designed to produce.
+
+</td>
+</tr>
+</table>
+
+## Problem
+
+Most repositories hide their engineering value behind flat documentation.
+
+<table>
+<tr>
+<td width="50%">
+
+### The Usual Result
+
+- Generic README templates
+- Weak visual hierarchy
+- Missing architecture
+- Inconsistent personal branding
+- Little evidence of engineering decisions
+
+</td>
+<td width="50%">
+
+### The Real Cost
+
+A strong project can look unfinished when its README does not explain the system, the tradeoffs, and the learning behind it.
 
 </td>
 </tr>
@@ -53,43 +97,60 @@ Architecture, decisions, tradeoffs, and learning are usually buried or missing c
 
 ## Solution
 
-This repository keeps documentation design as reusable agent knowledge.
+This repo turns README design into reusable agent knowledge.
 
-Instead of manually rewriting README standards in every project, install the skill once and let Codex apply the same visual system across repositories.
+The `readme-design-system` skill gives Codex a documented visual framework: inspect the repository, classify the project, generate honest technical storytelling, and present it with a consistent landing-page structure.
 
-<table>
-<tr>
-<td width="50%">
+## Before vs After
 
-### Reusable Skill System
-
-Each skill is a standalone folder with a `SKILL.md`, optional references, templates, examples, and assets.
-
-</td>
-<td width="50%">
-
-### Portfolio-Grade Output
-
-The README system generates hero sections, badges, cards, Mermaid diagrams, visual roadmaps, and professional author footers.
-
-</td>
-</tr>
-</table>
+| Before | After |
+|---|---|
+| README as a plain text file | README as a technical landing page |
+| Repeated manual prompt writing | Reusable Codex skill installed once |
+| Hidden architecture | Valid Mermaid diagrams and component tables |
+| Disconnected repository identity | Nicolas AI Engineering Lab visual system |
+| Generic feature list | Problem, solution, decisions, learning, roadmap |
 
 ## Included Skill
 
 ### `readme-design-system`
 
-A visual README design framework for creating technical landing pages.
+A visual README design framework for creating portfolio-grade technical documentation.
 
-| Capability | Description |
-|---|---|
-| Hero section | Centered project title, positioning statement, and optional banner |
-| Badge bar | Consistent Shields.io badges using the brand palette |
-| Visual cards | HTML/Markdown cards for features, modules, and learning outcomes |
-| Architecture | Mermaid diagrams plus component and data-flow explanations |
-| Storytelling | Problem, solution, decisions, lessons, and future improvements |
-| Category adaptation | AI, Agent, Cloud, Full Stack, and Documentation/Skill projects |
+<table>
+<tr>
+<td width="50%">
+
+### Visual Structure
+
+Hero, badge bar, identity block, HTML cards, visual roadmap, and professional footer.
+
+</td>
+<td width="50%">
+
+### Technical Communication
+
+Architecture diagrams, component responsibilities, project structure, technical decisions, and lessons learned.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Category Adaptation
+
+Adapts READMEs for AI, Agent, Cloud, Full Stack, Documentation/Skill, Tooling, and Hybrid projects.
+
+</td>
+<td width="50%">
+
+### Truthful Output
+
+Forces the agent to avoid fake metrics, invented architecture, empty marketing, and unsupported claims.
+
+</td>
+</tr>
+</table>
 
 Location:
 
@@ -97,53 +158,136 @@ Location:
 skills/readme-design-system/
 ```
 
-## Before vs After
-
-| Before | After |
-|---|---|
-| Generic README templates | Technical landing-page documentation |
-| Repeated manual prompts | Versioned reusable Codex skill |
-| Hidden architecture | Mermaid diagrams and component responsibilities |
-| Inconsistent repo identity | Nicolas AI Engineering Lab visual system |
-| Flat project explanation | Engineering storytelling and roadmap |
-
 ## Architecture
 
 ```mermaid
 flowchart TD
-    A[Awesome Disruptive READMEs] --> B[skills/]
-    B --> C[readme-design-system]
-    C --> D[SKILL.md]
-    C --> E[references/design-reference.md]
-    C --> F[templates/readme-template.md]
-    C --> G[examples/example-readme.md]
-    C --> H[agents/openai.yaml]
+    A["Awesome Disruptive READMEs"] --> B["skills/"]
+    B --> C["readme-design-system"]
+    C --> D["SKILL.md"]
+    C --> E["references/design-reference.md"]
+    C --> F["templates/readme-template.md"]
+    C --> G["examples/example-readme.md"]
+    C --> H["agents/openai.yaml"]
 
-    C -. symlink or copy .-> I[~/.codex/skills/readme-design-system]
-    I --> J[Any Repository]
-    J --> K[Visual Portfolio README]
+    C -. "symlink or copy" .-> I["Global Codex skills directory"]
+    I --> J["Any repository"]
+    J --> K["Visual portfolio README"]
 ```
 
 ### Component Responsibilities
 
 | Component | Responsibility |
 |---|---|
-| `SKILL.md` | Main activation metadata and execution rules for the agent |
-| `references/` | Detailed visual patterns, badge mapping, banner prompt, Mermaid rules |
-| `templates/` | Reusable README skeleton for future generation |
-| `examples/` | Compact example of the expected visual style |
-| `agents/openai.yaml` | UI-facing metadata for skill discovery |
+| `SKILL.md` | Main activation metadata and non-negotiable README generation rules |
+| `references/design-reference.md` | Badge colors, hero pattern, card pattern, Mermaid rules, banner guidance |
+| `templates/readme-template.md` | Reusable visual README skeleton |
+| `examples/example-readme.md` | Compact example of the expected output style |
+| `agents/openai.yaml` | UI-facing skill metadata |
 
 ### Technical Decisions
 
-- Keep the repo as the source of truth.
-- Install skills globally by symlink when possible.
-- Use ASCII-safe examples where Windows tooling may have encoding issues.
-- Prefer visual clarity over decoration: fewer stronger visual blocks, not noisy Markdown.
+- Keep this repo as the source of truth for reusable skills.
+- Install skills globally with a symlink when possible.
+- Require valid fenced Mermaid blocks for diagrams.
+- Use cards to reduce scanning effort without turning the README into decoration.
+- Keep future work clearly marked instead of pretending features already exist.
+
+## Visual README Patterns
+
+<table>
+<tr>
+<td width="50%">
+
+### Hero
+
+```md
+<div align="center">
+
+# Project Name
+
+Short technical positioning statement.
+
+</div>
+```
+
+</td>
+<td width="50%">
+
+### Badges
+
+```md
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-22C55E?style=for-the-badge" />
+</p>
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Cards
+
+```md
+<table>
+<tr>
+<td width="50%">
+
+### Capability
+
+Description.
+
+</td>
+</tr>
+</table>
+```
+
+</td>
+<td width="50%">
+
+### Mermaid
+
+````md
+```mermaid
+flowchart TD
+    A[Skill Repo] --> B[Installed Skill]
+    B --> C[Visual README]
+```
+````
+
+</td>
+</tr>
+</table>
+
+### Before vs After Pattern
+
+| Before | After |
+|---|---|
+| Flat documentation | Visual technical storytelling |
+| Hidden structure | Architecture and project structure |
+| Manual repetition | Reusable skill-driven workflow |
+
+## Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Markdown-Documentation-58A6FF?style=for-the-badge" alt="Markdown" />
+  <img src="https://img.shields.io/badge/YAML-Metadata-8B5CF6?style=for-the-badge" alt="YAML" />
+  <img src="https://img.shields.io/badge/Mermaid-Diagrams-22C55E?style=for-the-badge" alt="Mermaid" />
+  <img src="https://img.shields.io/badge/Codex-Agent%20Skills-0D1117?style=for-the-badge" alt="Codex Agent Skills" />
+</p>
+
+| Category | Used For |
+|---|---|
+| Markdown | README content and skill instructions |
+| YAML | Skill frontmatter and agent metadata |
+| Mermaid | GitHub-rendered architecture diagrams |
+| Shields.io | Visual badge system |
+| Codex Skills | Reusable agent behavior across repositories |
 
 ## How It Works
 
-Codex discovers skills through their metadata first:
+Codex discovers skills through `SKILL.md` metadata first:
 
 ```md
 ---
@@ -152,7 +296,7 @@ description: Create or improve highly visual, portfolio-grade GitHub README land
 ---
 ```
 
-When a user asks for README design, portfolio documentation, or visual repository presentation, Codex loads the skill body and follows its workflow.
+When a user asks for README design, portfolio documentation, architecture communication, or visual repository presentation, Codex loads the skill body and applies the system.
 
 ## Installation
 
@@ -177,7 +321,7 @@ New-Item -ItemType SymbolicLink `
   -Target "$PWD\skills\readme-design-system"
 ```
 
-This is the recommended approach because this repo remains the source of truth. Any change made here is immediately available to Codex.
+This is recommended because the repository remains the source of truth. Updating the skill here updates the globally installed skill automatically.
 
 ### Alternative: copy the skill
 
@@ -193,7 +337,7 @@ Copying is simpler, but updates are manual.
 
 ## Usage
 
-Open Codex in any repository and ask naturally:
+Open Codex in any repository and ask:
 
 ```txt
 Use the readme-design-system skill and create a visual landing-page README for this repository.
@@ -205,7 +349,7 @@ Or:
 Apply the Nicolas AI Engineering Lab README design system to this repo.
 ```
 
-Codex should inspect the repository, classify the project, and generate a README using the visual system.
+The expected behavior is: inspect the repo, classify the project, create a truthful visual README, and show the architecture when the project structure supports it.
 
 ## Project Structure
 
@@ -228,8 +372,6 @@ Awesome-disruptive-readmes/
 
 ## Skill Folder Standard
 
-Future skills should follow this structure:
-
 ```txt
 skills/
 `-- skill-name/
@@ -243,18 +385,15 @@ skills/
     `-- assets/
 ```
 
-Required:
-
-- `SKILL.md`
-
-Recommended when useful:
-
-- `agents/openai.yaml` for UI metadata
-- `references/` for detailed guidance
-- `templates/` for reusable output skeletons
-- `examples/` for expected style
-- `scripts/` for repeatable automation
-- `assets/` for reusable visual or output files
+| Path | Purpose |
+|---|---|
+| `SKILL.md` | Required skill trigger metadata and instructions |
+| `agents/openai.yaml` | Optional UI-facing metadata |
+| `references/` | Detailed guidance loaded only when needed |
+| `templates/` | Reusable output skeletons |
+| `examples/` | Expected output examples |
+| `scripts/` | Repeatable automation when useful |
+| `assets/` | Reusable images, templates, or output files |
 
 ## Roadmap
 
@@ -263,6 +402,7 @@ Recommended when useful:
 | Repository foundation | Done | GitHub repo, root README, first skill |
 | Visual README system | In progress | Hero, cards, badges, Mermaid, templates |
 | Global installation flow | In progress | Symlink/copy workflow documented |
+| GitHub metadata | In progress | About text and topics |
 | Automation scripts | Planned | Install and validate all skills |
 | Visual assets | Planned | `assets/banner.png` and brand graphics |
 | Skill catalog expansion | Planned | More reusable Codex skills |
@@ -280,9 +420,25 @@ The `description` field is not cosmetic. It controls when Codex decides to load 
 </td>
 <td width="50%">
 
-### Visual Systems Need Rules
+### Mermaid Needs Discipline
 
-A visual README is not random decoration. It needs repeatable structure, density control, and honest technical content.
+Diagrams only render on GitHub when they are inside valid fenced `mermaid` blocks. Close enough is not enough.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Visual Does Not Mean Noisy
+
+A strong README uses cards, badges, and diagrams to improve comprehension, not to decorate every line.
+
+</td>
+<td width="50%">
+
+### Reuse Beats Repetition
+
+A skill turns repeated documentation taste into a maintainable system that can evolve across projects.
 
 </td>
 </tr>
@@ -296,10 +452,15 @@ A visual README is not random decoration. It needs repeatable structure, density
 - Add before/after README examples from real projects.
 - Add more Codex skills for architecture docs, PR descriptions, and technical portfolios.
 
+---
+
+<div align="center">
+
 ## Author
 
-Built by **Nicolas Hoyos**<br>
+Built by <strong>Nicolas Hoyos</strong><br>
+Software Engineering - AI Engineering - Software Architecture<br><br>
 
-Software Engineering - AI Engineering - Software Architecture<br>
+<em>Building intelligent systems, scalable architectures, and practical AI products.</em>
 
-> Building intelligent systems, scalable architectures, and practical AI products.
+</div>
